@@ -1,3 +1,4 @@
+import { PopupService } from './popup.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [MarkerService],
+  providers: [MarkerService, PopupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
